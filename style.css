@@ -36,6 +36,7 @@ main {
     margin: 2rem auto;
     display: flex;
     gap: 2rem;
+    align-items: stretch;
 }
 
 
@@ -44,7 +45,9 @@ section {
     padding: 2rem;
     border-radius: 8px;
     flex: 1;
-    min-height: 450px;
+    min-height: 580px;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -101,6 +104,10 @@ section {
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
+
+    position: relative;
+    padding-top: 160px;
 }
 
 .card-laranja h2,
@@ -109,14 +116,16 @@ section {
 }
 
 .foto {
-    width: 160px; 
-    height: 160px;
+    width: 190px;
+    height: 190px;
     border-radius: 50%;
     object-fit: cover;
-    display: block;
-    margin: 0 auto 1.5rem auto; 
-}
 
+    position: absolute;
+    top: -60px; /* desce um pouco a imagem */
+    left: 50%;
+    transform: translateX(-50%);
+}
 .redes {
     display: flex;
     justify-content: center;
